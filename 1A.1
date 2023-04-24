@@ -1,0 +1,31 @@
+package baitap;
+import java.util.ArrayList;
+
+public class xuly {
+
+    private ArrayList<Vehicle> msa;
+
+    public xuly(ArrayList<Vehicle> msa) {
+        this.msa = msa;
+    }
+
+    public xuly() {
+        msa = new ArrayList<>();
+    }   
+    public void them_xe(Vehicle mt) {
+        this.msa.add(mt);
+        System.out.println("Da them thanh cong");
+    }
+    public void inThongTin() {
+        for (Vehicle xe : msa) {
+            System.out.println(xe.toString());
+        }
+    }
+   public void inThue() {
+        for (Vehicle xe : msa) {
+            System.out.println(xe.toString());
+        }
+    }
+
+    }
+    
