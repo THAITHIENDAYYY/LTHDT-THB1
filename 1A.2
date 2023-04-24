@@ -1,0 +1,135 @@
+
+package baitap;
+import java.util.Objects;
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+       xuly qlk = new xuly();
+        Scanner sc = new Scanner(System.in);
+        int menu;
+       
+              
+                   System.out.println("Chao ban! Cam on ban da su dung chuong trinh");
+                System.out.println("--------------------------------------");
+                System.out.println("--------Menu lua chon --------");
+                System.out.println("1. Them thong tin xe");
+                System.out.println("2. xuat bang ke khai tien truoc ba");
+                System.out.println("3. thoat");
+                System.out.print("Nhap vao lua chon cua ban: ");
+                   menu = sc.nextInt();
+                
+                    do {
+                    switch (menu) {
+                      
+                    
+                    
+                        case 1: {
+                         sc.nextLine();
+                                System.out.println("---------------------------------");
+                                
+                                System.out.print("Nhap Ten Chu xe: ");
+                                String tenChuXe = sc.nextLine();
+                                
+                                System.out.print("Nhap loai: ");
+                                String loaiXe = sc.nextLine();
+                                
+                                System.out.print(" dung tich: ");
+                                int dungTich = sc.nextInt();
+                                
+                                System.out.print("Tri gia: ");
+                                double triGia = sc.nextDouble();
+                                
+                                System.out.print("thuePhaiNop: ");
+                                double thuePhaiNop = sc.nextDouble();
+                                
+                                Vehicle cpn = new Vehicle( tenChuXe, loaiXe, dungTich, triGia, thuePhaiNop);
+                                 qlk.them_xe(cpn);
+                                 
+                                 qlk.inThongTin();
+                                 }
+                                 break;
+                        case 2: {
+                            System.out.println("thue cua xe do la =");
+                            qlk.inThue();
+                               break;
+                            
+                        }
+                  default:
+                                if (menu == 3) {
+                                    System.out.println("Quay lai chuong trinh thanh cong");
+                                } else {
+                                    System.out.println("Vui long nhap lai lua chon");
+                                }
+                        }while (menu != 0);
+                        break; 
+                   }
+                    }
+            }
+package baitap;
+import java.util.Objects;
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+       xuly qlk = new xuly();
+        Scanner sc = new Scanner(System.in);
+        int menu;
+       
+              
+                   System.out.println("Chao ban! Cam on ban da su dung chuong trinh");
+                System.out.println("--------------------------------------");
+                System.out.println("--------Menu lua chon --------");
+                System.out.println("1. Them thong tin xe");
+                System.out.println("2. xuat bang ke khai tien truoc ba");
+                System.out.println("3. thoat");
+                System.out.print("Nhap vao lua chon cua ban: ");
+                   menu = sc.nextInt();
+                
+                    do {
+                    switch (menu) {
+                      
+                    
+                    
+                        case 1: {
+                         sc.nextLine();
+                                System.out.println("---------------------------------");
+                                
+                                System.out.print("Nhap Ten Chu xe: ");
+                                String tenChuXe = sc.nextLine();
+                                
+                                System.out.print("Nhap loai: ");
+                                String loaiXe = sc.nextLine();
+                                
+                                System.out.print(" dung tich: ");
+                                int dungTich = sc.nextInt();
+                                
+                                System.out.print("Tri gia: ");
+                                double triGia = sc.nextDouble();
+                                
+                                System.out.print("thuePhaiNop: ");
+                                double thuePhaiNop = sc.nextDouble();
+                                
+                                Vehicle cpn = new Vehicle( tenChuXe, loaiXe, dungTich, triGia, thuePhaiNop);
+                                 qlk.them_xe(cpn);
+                                 
+                                 qlk.inThongTin();
+                                 }
+                                 break;
+                        case 2: {
+                            System.out.println("thue cua xe do la =");
+                            qlk.inThue();
+                               break;
+                            
+                        }
+                  default:
+                                if (menu == 3) {
+                                    System.out.println("Quay lai chuong trinh thanh cong");
+                                } else {
+                                    System.out.println("Vui long nhap lai lua chon");
+                                }
+                        }while (menu != 0);
+                        break; 
+                   }
+                    }
+            }
